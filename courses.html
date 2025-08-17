@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholars Guild — Courses</title>
+  <link rel="stylesheet" href="style2.CSS.css">
+</head>
+<body>
+  <nav aria-label="Main">
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section id="course-filter" aria-label="Filter courses">
+      <h1>Courses</h1>
+      <label for="country-select" class="muted">Country</label>
+      <select id="country-select">
+        <option value="all">All</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="germany">Germany</option>
+        <option value="au">Australia</option>
+        <option value="austria">Austria</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="denmark">Denmark</option>
+      </select>
+    </section>
+
+    <section id="course-list" class="grid" aria-live="polite">
+
+      <!-- UK - University of Oxford -->
+      <article class="course-card" data-country="uk">
+        <figure class="card-media">
+  <img src="img/oxf.webp" alt="University of Oxford campus" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">University of Oxford</h2>
+        <p class="desc"><strong>Bachelor</strong><br>Computer Science<br>Anthropology<br>Geography</p>
+        <p class="desc" style="margin-top:8px;"><strong>MSc</strong><br>Biology<br>Medicine<br>History</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: £38,550/year</p>
+          <p><strong>MSc</strong> - Duration: 1 year, Tuition: £25,550/year</p>
+          <p>World-leading research, strong industry links, beautiful historic campus.</p>
+        </div>
+      </article>
+
+      <!-- UK - Imperial College London -->
+      <article class="course-card" data-country="uk">
+        <figure class="card-media">
+  <img src="img/Imperial.avif" alt="Imperial College London" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Imperial College London</h2>
+        <p class="desc"><strong>Bachelor</strong><br>Global Business<br>Mathematics</p>
+        <p class="desc" style="margin-top:8px;"><strong>MSc</strong><br>Medicine<br>Chemistry</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: £30,000/year</p>
+          <p><strong>MSc</strong> - Duration: 1 year, Tuition: £20,550/year</p>
+          <p>Advanced study in AI and machine learning, top-ranked STEM university.</p>
+        </div>
+      </article>
+
+      <!-- UK - Ulster University -->
+      <article class="course-card" data-country="uk">
+        <figure class="card-media">
+  <img src="img/Ulster.jpg" alt="Ulster University" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Ulster University</h2>
+        <p class="desc"><strong>Bachelor</strong><br>Computing System<br>English & Modern Language</p>
+        <p class="desc" style="margin-top:8px;"><strong>MSc</strong><br>Law<br>Economic & Management</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: £12,800/year</p>
+          <p><strong>MSc</strong> - Duration: 1 year, Tuition: £18,550/year</p>
+          <p>World-leading research, strong industry links, beautiful historic campus.</p>
+        </div>
+      </article>
+
+      <!-- USA -->
+      <article class="course-card" data-country="usa">
+        <figure class="card-media">
+  <img src="img/MIT.jpg" alt="Massachusetts Institute of Technology (MIT)" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Massachusetts Institute of Technology (MIT)</h2>
+        <p class="desc"><strong>Bachelor</strong><br>EECS<br>Fine Art</p>
+        <p class="desc" style="margin-top:8px;"><strong>MSc</strong><br>Geography<br>Material Science</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 4 years, Tuition: $59,750/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: $37,000/year</p>
+          <p>World-class faculty and high graduate employability.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="usa">
+        <figure class="card-media">
+  <img src="img/Stanford.jpg" alt="Stanford University" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Stanford University</h2>
+        <p class="desc"><strong>Bachelor</strong><br>Data Science<br>Politics</p>
+        <p class="desc" style="margin-top:8px;"><strong>MSc</strong><br>Mathematics & Philosophy</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 4 years, Tuition: $50,750/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: $27,000/year</p>
+          <p>Strong research culture and industry links.</p>
+        </div>
+      </article>
+
+      <!-- Canada -->
+      <article class="course-card" data-country="canada">
+        <figure class="card-media">
+  <img src="img/Toronto.jpg" alt="University of Toronto" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">University of Toronto</h2>
+        <p class="desc">BSc Computer Science</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 4 years</p><p>Tuition: CAD 58,160/year</p>
+          <p>Diverse student body and high research impact.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="canada">
+        <figure class="card-media">
+  <img src="img/Columbia.jpg" alt="University of British Columbia" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">University of British Columbia (UBC)</h2>
+        <p class="desc">MEng Electrical & Computer Engineering</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 2 years</p><p>Tuition: CAD 30,000/year</p>
+          <p>Strong co-op opportunities in Vancouver.</p>
+        </div>
+      </article>
+
+      <!-- Germany -->
+      <article class="course-card" data-country="germany">
+        <figure class="card-media">
+  <img src="img/Technical.jpg" alt="Technical University of Munich" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Technical University of Munich (TUM)</h2>
+        <p class="desc">MSc Informatics</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 2 years</p><p>Tuition: Free (fees only)</p>
+          <p>Top European tech university.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="germany">
+        <figure class="card-media">
+  <img src="img/RWTH.png" alt="RWTH Aachen University" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">RWTH Aachen University</h2>
+        <p class="desc">BSc Mechanical Engineering</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 3 years</p><p>Tuition: Free (contribution)</p>
+          <p>Prestigious engineering program.</p>
+        </div>
+      </article>
+
+      <!-- Australia -->
+      <article class="course-card" data-country="au">
+        <figure class="card-media">
+  <img src="img/Melbourne.jpg" alt="University of Melbourne" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">University of Melbourne</h2>
+        <p class="desc">Master of Information Technology</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 2 years</p><p>Tuition: AUD 46,000/year</p>
+          <p>Flexible specialisations, vibrant city.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="au">
+        <figure class="card-media">
+  <img src="img/Sydney.jpeg" alt="University of Sydney" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">University of Sydney</h2>
+        <p class="desc">BSc Biomedical Engineering</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 4 years</p><p>Tuition: AUD 52,000/year</p>
+          <p>Cutting-edge research and scholarships.</p>
+        </div>
+      </article>
+
+      <!-- Austria -->
+      <article class="course-card" data-country="austria">
+        <figure class="card-media">
+  <img src="img/Vienna.jpg" alt="University of Vienna" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">University of Vienna</h2>
+        <p class="desc">MSc Business Analytics</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 2 years</p>
+          <p>Tuition: ~€1,500 (EU) / ~€7,300 (non-EU)</p>
+          <p>Great networking in Central Europe.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="austria">
+        <figure class="card-media">
+  <img src="img/Graz.jpg" alt="Graz University of Technology" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Graz University of Technology</h2>
+        <p class="desc">BSc Software Engineering & Management</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 3 years</p>
+          <p>Tuition: Free (EU) / ~€1,500 (non-EU)</p>
+          <p>Renowned technical focus.</p>
+        </div>
+      </article>
+
+      <!-- Netherlands -->
+      <article class="course-card" data-country="netherlands">
+        <figure class="card-media">
+  <img src="img/Delft.jpg" alt="Delft University of Technology" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Delft University of Technology</h2>
+        <p class="desc">MSc Aerospace Engineering</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 2 years</p>
+          <p>Tuition: €20,800 (non-EU) / €2,314 (EU)</p>
+          <p>Hands-on projects near Amsterdam.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="netherlands">
+        <figure class="card-media">
+  <img src="img/Amsterdam.webp" alt="University of Amsterdam" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">University of Amsterdam</h2>
+        <p class="desc">BSc Communication Science</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 3 years</p>
+          <p>Tuition: €9,220 (non-EU) / €2,530 (EU)</p>
+          <p>Innovative curriculum, city-centre campus.</p>
+        </div>
+      </article>
+
+      <!-- Denmark -->
+      <article class="course-card" data-country="denmark">
+        <figure class="card-media">
+  <img src="img/Denmark.webp" alt="Technical University of Denmark" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Technical University of Denmark (DTU)</h2>
+        <p class="desc">MSc Wind Energy</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 2 years</p>
+          <p>Tuition: €15,000 (non-EU), free (EU/EEA)</p>
+          <p>World leader in sustainable engineering.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="denmark">
+        <figure class="card-media">
+  <img src="img/Aarhus.jpg" alt="Aarhus University" class="card-img" loading="lazy">
+</figure>
+        <h2 tabindex="0">Aarhus University</h2>
+        <p class="desc">BSc Global Management and Manufacturing</p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p>Duration: 3.5 years</p>
+          <p>Tuition: €10,000 (non-EU), free (EU/EEA)</p>
+          <p>Strong industry connections, vibrant student life.</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
