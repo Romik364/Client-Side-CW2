@@ -110,6 +110,7 @@ document.querySelectorAll(".tab-content").forEach(content => {
 
 });
 
+//Search Bar feature
 $(document).ready(function () {
   const $input = $('#site-search-input');
   const $results = $('#search-results');
